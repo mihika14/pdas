@@ -1,11 +1,21 @@
 import React from "react";
 
-function ProfileCard({title,handle}){
+function ProfileCard({title,handle,image}){
     return(
-        <div>
-           <div>Title is {title}</div>
-           <div>Handle is {handle}</div>
+        <div className="card">
+         <div className="card-image">
+            <figure className="image is-1byl">
+            <img src = {image} />
+            </figure>
+         </div>
+          <div className="card-content" >
+            <div className="media-content"></div>
+            <p className="title is-4">Title is {title}</p>
+           <p className="subtitle is-6">Handle is {handle}</p>
         </div>
+
+          </div>
+         
     )
 }
 
